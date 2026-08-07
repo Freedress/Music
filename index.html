@@ -2,16 +2,53 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 <title>Music</title>
+
+<style>
+body {
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#111;
+  font-family:Arial;
+}
+
+.card {
+  width:320px;
+  padding:30px;
+  text-align:center;
+  background:white;
+  border-radius:20px;
+}
+
+h1 {
+  font-size:28px;
+}
+
+audio {
+  width:100%;
+}
+</style>
+
 </head>
 
 <body>
 
-<h1>Music</h1>
+<div class="card">
 
-<audio controls autoplay>
-  <source src="music.m4a" type="audio/mpeg">
+<h1>🎵 Music</h1>
+
+<p>我的专属音乐</p>
+
+<audio controls>
+<source src="music.m4a" type="audio/mpeg">
 </audio>
+
+</div>
 
 </body>
 </html>
