@@ -2,148 +2,229 @@
 <html lang="zh-HK">
 
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Freedress Music</title>
 
+
 <style>
 
-body {
-    margin: 0;
-    height: 100vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+
+    margin:0;
+
+    height:100vh;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
 
     background:
+
     linear-gradient(
         rgba(255,220,235,0.35),
         rgba(255,220,235,0.35)
     ),
+
     url("background.jpg");
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 
-    font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+
+    font-family:
+    "PingFang TC",
+    "Microsoft JhengHei",
+    sans-serif;
+
 }
 
+
+
+/* 音乐卡片 */
 
 .card {
 
-    width: 320px;
 
-    padding: 35px 25px;
+    width:320px;
 
-    text-align: center;
 
-    background: rgba(255,255,255,0.92);
+    padding:35px 25px;
 
-    border-radius: 25px;
+
+    text-align:center;
+
+
+    background:rgba(255,255,255,0.92);
+
+
+    border-radius:25px;
+
 
     box-shadow:
+
     0 10px 30px rgba(255,120,160,0.25);
+
 
 }
 
+
+
+/* 月亮图标 */
 
 .logo {
 
-    font-size: 45px;
+    font-size:45px;
 
 }
 
+
+
+/* 标题 */
 
 h1 {
 
-    font-size: 30px;
+    font-size:30px;
 
-    letter-spacing: 3px;
+    letter-spacing:3px;
 
-    color: #d66a91;
+    color:#d66a91;
 
-    margin-bottom: 15px;
-
-}
-
-
-p {
-
-    font-size: 16px;
-
-    line-height: 2;
-
-    color: #666;
+    margin:15px 0;
 
 }
 
+
+
+/* 音乐 */
 
 audio {
 
-    width: 100%;
+    width:100%;
 
-    margin-top: 20px;
+    margin-top:20px;
 
 }
+
+
+
+/* 外面的祝福文字 */
+
+.message {
+
+
+    margin-top:25px;
+
+
+    text-align:center;
+
+
+    color:white;
+
+
+    font-size:16px;
+
+
+    line-height:2;
+
+
+    text-shadow:
+
+    0 2px 5px rgba(0,0,0,0.45);
+
+
+}
+
 
 
 .footer {
 
-    margin-top: 20px;
 
-    font-size: 13px;
+    margin-top:15px;
 
-    color: #aaa;
+
+    font-size:13px;
+
+
+    color:#aaa;
+
 
 }
 
+
+
 </style>
 
+
 </head>
+
 
 
 <body>
 
 
+
 <div class="card">
 
 
-<div class="logo">
-🌙
-</div>
+    <div class="logo">
+        🌙
+    </div>
 
 
-<h1>
-Freedress
-</h1>
+
+    <h1>
+        Freedress
+    </h1>
 
 
-<p>
-祝大家中秋節快樂<br>
-年年都跟我們在一起 👩‍❤️‍💋‍👩
-</p>
+
+    <audio controls playsinline preload="metadata">
+
+        <source src="./Music.mp3" type="audio/mpeg">
+
+        你的浏览器不支持音乐播放
+
+    </audio>
 
 
-<audio controls playsinline preload="metadata">
 
-<source src="./Music.mp3" type="audio/mpeg">
+    <div class="footer">
+        Made with ❤️
+    </div>
 
-你的浏览器不支持音乐播放
-
-</audio>
-
-
-<div class="footer">
-Made with ❤️
-</div>
 
 
 </div>
+
+
+
+
+<div class="message">
+
+    祝大家中秋節快樂 🌕<br>
+
+    年年都跟我們在一起 👩‍❤️‍💋‍👩
+
+</div>
+
 
 
 </body>
+
 
 </html>
